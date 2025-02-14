@@ -11,9 +11,9 @@
 - Run : `python manage.py runserver`
 
 
-`Free backend deployment link` : `https://crud-u6f8.onrender.com/`
+Free backend deployment link : `https://crud-u6f8.onrender.com/`
 
-`Postman testing screenshot link` : `https://docs.google.com/document/d/15Cd1pikH2KJA0I7cogsT6RMi8Qj91_9blsq4UQvz0W8/edit?usp=sharing` 
+Postman testing screenshot link : `https://docs.google.com/document/d/15Cd1pikH2KJA0I7cogsT6RMi8Qj91_9blsq4UQvz0W8/edit?usp=sharing` 
 
 
 `Registration:`

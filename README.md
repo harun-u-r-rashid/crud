@@ -18,6 +18,7 @@ Postman testing screenshot link : `https://docs.google.com/document/d/15Cd1pikH2
 
 `Registration:`
 To register, provide a phone number, username, password, and confirm_password.
+
 `Registration will fail if:`
 A user with the given phone number already exists.
 The password is shorter than 6 characters.

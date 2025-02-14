@@ -117,9 +117,9 @@ class UpdateMembershipAPIView(generics.UpdateAPIView):
 
         if member_status == "SILVER":
             user.member_expire = timezone.now() + timedelta(days=10)
-        if member_status == "DIAMOND":
-            user.member_expire = timezone.now() + timedelta(days=20)
         if member_status == "GOLD":
+            user.member_expire = timezone.now() + timedelta(days=20)
+        if member_status == "DIAMOND":
             user.member_expire = timezone.now() + timedelta(days=30)
 
         user.save()

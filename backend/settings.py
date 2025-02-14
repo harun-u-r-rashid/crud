@@ -47,7 +47,7 @@ CSRF_TRUSTED_ORIGINS = [
 # Application definition
 
 INSTALLED_APPS = [
-     "jazzmin",
+    "jazzmin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -155,8 +155,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
+import os
 
 STATIC_URL = "static/"
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+STATIC_ROOT = BASE_DIR / "templates"
+
+MEDIA_URL = "/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -167,16 +174,16 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # ====JAZZMIN====
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
-    "site_title": "Inventory Admin Management",
+    "site_title": "CRUD Admin Management",
     # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_header": "Inventory",
+    "site_header": "CRUD",
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_brand": "Inventory",
+    "site_brand": "CRUD",
     # Logo to use for your site, must be present in static files, used for brand on top left
     # "site_logo": "books/img/logo.png",
     # Welcome text on the login screen
-    "welcome_sign": "Welcome to the Inventory",
-    "copyright": "Inventory",
+    "welcome_sign": "Welcome to the CRUD",
+    "copyright": "CRUD",
     "show_ui_builder": False,
 }
 
